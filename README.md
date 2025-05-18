@@ -1,0 +1,2 @@
+# corelizard
+Magnetic core calculator
