@@ -1,2 +1,3 @@
-# corelizard
-Magnetic core calculator
+# Core Lizard
+## Magnetic core calculator
+### EE Core Design
