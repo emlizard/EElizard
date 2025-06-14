@@ -1,4 +1,4 @@
-<!DOCTYPE html>
++<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -609,31 +609,31 @@
         <h4 style="color: var(--primary); margin-bottom: 1rem;">Core Dimensions (mm)</h4>
         <div class="dimension-grid">
           <div class="input-group">
-            <label class="input-label" for="dimA">Core Width</label>
+            <label class="input-label" for="dimA">A</label>
             <input type="number" class="input-field" id="dimA" step="0.1" value="36">
           </div>
           <div class="input-group">
-            <label class="input-label" for="dimH">Core Height</label>
+            <label class="input-label" for="dimH">H</label>
             <input type="number" class="input-field" id="dimH" step="0.1" value="18">
           </div>
           <div class="input-group">
-            <label class="input-label" for="dimC">Core Length</label>
+            <label class="input-label" for="dimC">C</label>
             <input type="number" class="input-field" id="dimC" step="0.1" value="10">
           </div>
           <div class="input-group">
-            <label class="input-label" for="tSide">Thickness Side</label>
+            <label class="input-label" for="tSide">T_Side</label>
             <input type="number" class="input-field" id="tSide" step="0.1" value="2">
           </div>
           <div class="input-group">
-            <label class="input-label" for="tPlate">Thickness Plate</label>
+            <label class="input-label" for="tPlate">T_Plate</label>
             <input type="number" class="input-field" id="tPlate" step="0.1" value="3">
           </div>
           <div class="input-group">
-            <label class="input-label" for="dimF">Center Leg Width</label>
+            <label class="input-label" for="dimF">F</label>
             <input type="number" class="input-field" id="dimF" step="0.1" value="10">
           </div>
           <div class="input-group">
-            <label class="input-label" for="dimG">Center Leg Length</label>
+            <label class="input-label" for="dimG">G</label>
             <input type="number" class="input-field" id="dimG" step="0.1" value="10">
           </div>
         </div>
@@ -669,9 +669,8 @@
         <div class="info-box">
           <h4>Design Notes</h4>
           <p>• All dimensions must be positive values<br>
-          • Ensure B > 2×t_plate and A > 2×t_side for valid geometry<br>
           • Air gap can be zero for ungapped cores<br>
-          • E and D are automatically calculated from thickness parameters</p>
+          • B,  D and E are automatically calculated from thickness parameters</p>
         </div>
       </div>
 
