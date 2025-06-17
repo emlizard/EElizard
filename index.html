@@ -702,9 +702,9 @@
       <div class="formula-section">
         <h3>Derived Dimensions</h3>
         <div class="formula-content">
-          <p>\( B = H - 2 \times t_{side} \)</p>
+          <p>\( B = H / 2 \)</p>
           <p>\( E = A - 2 \times t_{side} \)</p>
-          <p>\( D = \frac{B - 2 \times t_{plate}}{2} \)</p>
+          <p>\( D = B - t_{plate} \)</p>
         </div>
       </div>
 
@@ -798,9 +798,9 @@
           const turns = parseInt(document.getElementById("turns").value);
 
           // Calculate derived dimensions
-          const dimB = dimH - 2 * tSide;
+          const dimB = dimH / 2;
           const dimE = dimA - 2 * tSide;
-          const dimD = (dimB - 2 * tPlate) / 2;
+          const dimD = dimB - tPlate;
 
           // Input validation
           if ([dimA,dimH,dimC,tSide,tPlate,dimF,dimG,muR,turns].some(v=>isNaN(v)||v<=0) || isNaN(gap)) {
@@ -815,8 +815,8 @@
             return;
           }
           
-          if (dimH <= 2*tSide || dimA <= 2*tSide) {
-            showError('H > 2*t_side and A > 2*t_side conditions must be satisfied');
+          if (dimH <= 2*tPlate || dimA <= 2*tPlate) {
+            showError('H > 2*t_plate and A > 2*t_plate conditions must be satisfied');
             resultsContainer.innerHTML = '<div class="placeholder-state">Invalid geometry constraints</div>';
             return;
           }
