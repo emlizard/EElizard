@@ -107,6 +107,31 @@
       justify-content: space-between;
       align-items: center;
     }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius);
+      transition: var(--transition);
+      font-weight: 500;
+    }
+
+    .back-btn:hover {
+      color: var(--primary);
+      background: rgba(37, 99, 235, 0.1);
+    }
+
+    .page-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
     .page-title {
       font-size: 1.5rem;
