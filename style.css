@@ -107,6 +107,13 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
     .back-btn {
       display: inline-flex;
       align-items: center;
@@ -122,15 +129,6 @@
     .back-btn:hover {
       color: var(--primary);
       background: rgba(37, 99, 235, 0.1);
-    }
-
-    .page-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--primary), var(--accent));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
     }
 
     .page-title {
